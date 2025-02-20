@@ -1,0 +1,627 @@
+###############################
+# キー割り当て
+# unlock: trueのとき、何も変更しない
+# unlock: falseのとき、keyを変更できなくする
+#     keyが指定されていれば、指定されたkeyに割り当てる
+#     keyが指定されていなければ、キー割り当てを変更しない
+#     keyは大文字・小文字を区別しない
+# modで追加されたキーを設定したい場合は、ボタンを右クリックする
+#  or
+# 対象modのlangファイルなどから対象となるパスを見つけてください。
+
+## ZOOM設定
+### Optifine ZOOM設定
+of.key.zoom:
+  unlock: true
+  key: "Unknown"
+
+### Just Zoom Mod ZOOM設定
+justzoom.keybinds.keybind.zoom:
+  unlock: true
+  key: "Unknown"
+
+### OK ZOOMER MOD ZOOM設定
+key.ok_zoomer.decrease_zoom:
+  unlock: true
+  key: "Unknown"
+key.ok_zoomer.increase_zoom:
+  unlock: true
+  key: "Unknown"
+key.ok_zoomer.reset_zoom:
+  unlock: true
+  key: "Unknown"
+key.ok_zoomer.zoom:
+  unlock: true
+  key: "Unknown"
+
+## 移動
+### ジャンプ
+key.jump:
+  unlock: true
+  key: "Space"
+### スニーク
+key.sneak:
+  unlock: true
+  key: "LShift"
+### ダッシュ
+key.sprint:
+  unlock: true
+  key: "LCtrl"
+### 前進
+key.forward:
+  unlock: true
+  key: "W"
+### 右
+key.right:
+  unlock: true
+  key: "D"
+### 左
+key.left:
+  unlock: true
+  key: "A"
+### 後退
+key.back:
+  unlock: true
+  key: "S"
+
+## ゲームプレイ
+### アイテムの使用／ブロックの設置
+key.use:
+  unlock: true
+  key: "MouseRight"
+### ブロック選択
+key.pickItem:
+  unlock: true
+  key: "MouseMiddle"
+
+### 攻撃する／壊す
+key.attack:
+  unlock: true
+  key: "MouseLeft"
+
+## インベントリ
+### アイテムをオフハンドと交換
+key.swapOffhand:
+  unlock: true
+  key: "F"
+### アイテムを捨てる
+key.drop:
+  unlock: true
+  key: "Q"
+### インベントリの開閉
+key.inventory:
+  unlock: true
+  key: "E"
+### ホットバースロット1
+key.hotbar.1:
+  unlock: true
+  key: "1"
+### ホットバースロット2
+key.hotbar.2:
+  unlock: true
+  key: "2"
+### ホットバースロット3
+key.hotbar.3:
+  unlock: true
+  key: "3"
+### ホットバースロット4
+key.hotbar.4:
+  unlock: true
+  key: "4"
+### ホットバースロット5
+key.hotbar.5:
+  unlock: true
+  key: "5"
+### ホットバースロット6
+key.hotbar.6:
+  unlock: true
+  key: "6"
+### ホットバースロット7
+key.hotbar.7:
+  unlock: true
+  key: "7"
+### ホットバースロット8
+key.hotbar.8:
+  unlock: true
+  key: "8"
+### ホットバースロット9
+key.hotbar.9:
+  unlock: true
+  key: "9"
+
+## クリエィティブモード
+### ホットバーの保存
+key.saveToolbarActivator:
+  unlock: true
+  key: "C"
+### ホットバーの読み込み
+key.loadToolbarActivator:
+  unlock: true
+  key: "X"
+
+## マルチプレイ
+### コマンドラインを開く
+key.command:
+  unlock: true
+  key: "/"
+### チャットを開く
+key.chat:
+  unlock: true
+  key: "T"
+### プレイヤーリストの表示
+key.playerlist:
+  unlock: true
+  key: "Tab"
+### 社交設定画面
+key.socialInteractions:
+  unlock: true
+  key: "P"
+
+## その他
+### スクリーンショットの撮影
+key.screenshot:
+  unlock: true
+  key: "F2"
+### フルスクリーンの切り替え
+key.fullscreen:
+  unlock: true
+  key: "F11"
+### プレイヤーの強調表示（スペクテイター）
+key.spectatorOutlines:
+  unlock: true
+  key: "Unknown"
+### 滑らかなカメラ動作の切り替え
+key.smoothCamera:
+  unlock: true
+  key: "Unknown"
+### 視点の切り替え
+key.togglePerspective:
+  unlock: true
+  key: "F5"
+  cameraType: "FIRST_PERSON" # THIRD_PERSON_BACK, THIRD_PERSON_FRONT (unlock: falseの時の設定)
+### 進捗
+key.advancements:
+  unlock: true
+  key: "L"
+
+####################################
+
+# デバックF3
+## value: 設定する値
+
+## GUIの表示/非表示(F1)
+key.debugF1:
+  unlock: true
+  value: false # true: hideGUI (falseがデフォルト(GUIを表示する))
+##　デバッグ画面(F3)
+key.debugF3:
+  unlock: true
+  value: false # true: renderDebug (falseがデフォルト(デバッグ画面を表示しない))
+## 当たり判定を表示(F3+B)
+key.debugF3+B:
+  unlock: true
+  value: false # false:非表示 (falseがデフォルト(当たり判定を表示しない))
+## 高度な情報を表示(F3+H)
+key.debugF3+H:
+  unlock: true
+  value: false
+
+###
+## active: falseにすると無効化
+## /tpコマンドとして座標をコピー。長押しでゲームをクラッシュ(F3+C)
+key.debugF3+C:
+  active: true
+## チャンクの境界を表示(F3+G)
+key.debugF3+G:
+  active: true
+## エンティティまたはブロックのデータをクリップボードにコピー(F3+I)
+key.debugF3+I:
+  active: true
+
+###################################
+# アクセシビリティ
+## 設定
+### 視野角
+options.fov:
+  unlock: true
+  value: 70 # [30-110]の範囲のみ
+### オンライン
+options.online:
+  unlock: true
+### スキンカスタマイズボタン
+options.skinCustomisation:
+  unlock: true
+### サウンド設定
+options.sounds:
+  unlock: true
+### ビデオ設定
+options.video:
+  unlock: true
+### 操作設定
+options.controls:
+  unlock: true
+### 言語設定
+options.language:
+  unlock: true
+### チャット設定
+options.chat.title:
+  unlock: true
+### リソースパック
+options.resourcepack:
+  unlock: true
+### アクセシビリティ設定
+options.accessibility.title:
+  unlock: true
+### データの遠隔収集
+options.telemetry:
+  unlock: true
+### クレジットと帰属表示
+options.credits_and_attribution:
+  unlock: true
+
+## ゲームメニュー
+### ゲームに戻る
+menu.returnToGame:
+  unlock: true
+### 進捗
+gui.advancements:
+  unlock: true
+### 統計
+gui.stats:
+  unlock: true
+### フィードバックを送る
+menu.sendFeedback:
+  unlock: true
+### バグを報告する
+menu.reportBugs:
+  unlock: true
+### 設定
+menu.options:
+  unlock: true
+### LANに公開
+menu.shareToLan:
+  unlock: true
+### セーブしてタイトルに戻る
+menu.returnToMenu:
+  unlock: true
+
+## チャット
+# falseにするとチャット欄に入力できなくなる
+chat.editBox:
+  unlock: true
+
+## スキンのカスタマイズ
+options.modelPart.cape:
+  unlock: true
+options.modelPart.jacket:
+  unlock: true
+options.modelPart.left_sleeve:
+  unlock: true
+options.modelPart.right_sleeve:
+  unlock: true
+options.modelPart.left_pants_leg:
+  unlock: true
+options.modelPart.right_pants_leg:
+  unlock: true
+options.modelPart.hat:
+  unlock: true
+### 利き手
+options.mainHand:
+  unlock: true
+  value: "RIGHT" # 右手 左手
+
+## サウンドの設定
+## value: [0-1]
+# 主音量
+soundCategory.master:
+  unlock: true
+  value: 1
+
+## BGM:
+soundCategory.music:
+  unlock: true
+  value: 0
+## ジュークボックス/音符ブロック
+soundCategory.record:
+  unlock: true
+  value: 1
+## 天候
+soundCategory.weather:
+  unlock: true
+  value: 1
+## ブロック
+soundCategory.block:
+  unlock: true
+  value: 1
+## 敵対的生物
+soundCategory.hostile:
+  unlock: true
+  value: 1
+## 友好的生物
+soundCategory.neutral:
+  unlock: true
+  value: 1
+## プレイヤー
+soundCategory.player:
+  unlock: true
+  value: 1
+#　環境音
+soundCategory.ambient:
+  unlock: true
+  value: 1
+# 声/スピーチ
+soundCategory.voice:
+  unlock: true
+  value: 1
+# オーディオデバイス
+options.audioDevice:
+  unlock: true
+# 字幕の表示
+options.showSubtitles:
+  unlock: true
+  value: false
+# 指向性オーディオ
+options.directionalAudio:
+  unlock: true
+  value: false
+
+## ビデオ設定
+#　フルスクリーンでの解像度
+options.fullscreen.resolution:
+  unlock: true
+# バイオームの重なり具合
+options.biomeBlendRadius:
+  unlock: true
+  value: 2 # default: 5x5 <- 2 * value+1で計算される
+# グラフィックス
+options.graphics:
+  unlock: true
+  value: "FANCY" # FAST, FABULOUS(最高設定)
+# 描画距離チャンク
+options.renderDistance:
+  unlock: true
+  value: 12 # 2-32
+# チャンク構築
+options.prioritizeChunkUpdates:
+  unlock: true
+  value: "NONE" #PLAYER_AFFECTED, NEARBY
+# 演算距離チャンク
+options.simulationDistance:
+  unlock: true
+  value: 12 # 5-32
+# スムーズライティング
+options.ao:
+  unlock: true
+  value: false
+# 最大フレームレート
+options.framerateLimit:
+  unlock: true
+  value: 120 #[10-260]
+# 垂直同期
+options.vsync:
+  unlock: true
+  value: true
+# 画面の揺れ
+options.viewBobbing:
+  unlock: true
+  value: true
+# GUIの大きさ
+options.guiScale:
+  unlock: true
+  value: 0 # 0-auto
+# 攻撃変動の表示
+options.attackIndicator:
+  unlock: true
+  value: "CROSSHAIR" #OFF, CROSSHAIR, HOTBAR;
+# 明るさ
+options.gamma:
+  unlock: true
+  value: 1 # 明るさは100倍される
+# 雲の描画
+options.renderClouds:
+  unlock: true
+  value: "FANCY" # FANCY, FAST, OFF
+# フルスクリーン　オン/オフ
+options.fullscreen:
+  unlock: true
+  value: false
+# パーティクル
+options.particles:
+  unlock: true
+  value: "ALL" # ALL, DECREASED, MINIMAL
+# ミップマップサイズ
+options.mipmapLevels:
+  unlock: true
+  value: 4 # [0,4]
+# エンティティの影
+options.entityShadows:
+  unlock: true
+  value: true
+# 画面の歪み
+options.screenEffectScale:
+  unlock: true
+  value: 1 # 0-1
+# エンティティの描画距離
+options.entityDistanceScaling:
+  unlock: true
+  value: 1 # #0.5 - 5
+# 視野の変化
+options.fovEffectScale:
+  unlock: true
+  value: 1 # 0-1
+# オートセーブの表示
+options.autosaveIndicator:
+  unlock: true
+  value: true
+options.glintSpeed:
+  unlock: true
+  value: 0.5 # 0-1
+
+options.glintStrength:
+  unlock: true
+  value: 0.75 # 0-1
+
+
+## 操作設定
+# マウス設定
+options.mouse_settings:
+  unlock: true
+# キー割り当て
+controls.keybinds:
+  unlock: true
+
+# スニーク切り替え
+## value: true ->切り替え
+## value: false ->固定
+key.sneak.toggle:
+  unlock: true
+  value: false
+
+# ダッシュ切り替え
+## value: true ->切り替え
+## value: false ->固定
+key.sprint.toggle:
+  unlock: true
+  value: false
+
+# 自動ジャンプ
+options.autoJump:
+  unlock: true
+  value: false
+# 管理者用アイテムタブ
+options.operatorItemsTab:
+  unlock: true
+  value: false
+
+## マウス設定
+#　マウスの感度
+options.sensitivity:
+  unlock: true
+  value: 0.5 # 0-1 0.5が100%に対応
+# マウス操作の反転
+options.invertMouse:
+  unlock: true
+  value: false
+# マウスホイールの感度
+options.mouseWheelSensitivity:
+  unlock: true
+  value: 1
+# マウススクロール設定の無視
+options.discrete_mouse_scroll:
+  unlock: true
+  value: false
+# タッチスクリーンモード
+options.touchscreen:
+  unlock: true
+  value: false
+# Raw入力
+options.rawMouseInput:
+  unlock: true
+  value: true
+
+## チャット設定
+# チャット(表示・コマンドのみ・非表示)
+options.chat.visibility:
+  unlock: true
+  value: "full" #"system", "hidden"
+# 色
+options.chat.color:
+  unlock: true
+  value: true # オン
+# ウェブリンク
+options.chat.links:
+  unlock: true
+  value: true
+# リンクを開く際の確認表示
+options.chat.links.prompt:
+  unlock: true
+  value: true
+# チャットの文字サイズ
+options.chat.scale:
+  unlock: true
+  value: 1.0
+# チャットの幅
+options.chat.width:
+  unlock: true
+  value: 1.0
+# 入力時の高さ
+options.chat.height.focused:
+  unlock: true
+  value: 1.0
+# 通常時の高さ
+options.chat.height.unfocused:
+  unlock: true
+  value: 1.0
+# コマンドの候補
+options.autoSuggestCommands:
+  unlock: true
+  value: true
+# 合致した名前の非表示
+options.hideMatchedNames:
+  unlock: true
+  value: true
+# デバック情報を減らす
+options.reducedDebugInfo:
+  unlock: true
+  value: false
+# 安全なチャットのみ表示
+options.onlyShowSecureChat:
+  unlock: true
+  value: false
+
+## アクセシビリティ設定
+# 音声読み上げ
+options.narrator:
+  unlock: true
+  value: "off"  # all, chat, system
+
+#　ハイコントラスト
+options.accessibility.high_contrast:
+  unlock: true
+  value: false
+
+# 背景の不透明度
+options.accessibility.text_background_opacity:
+  unlock: true
+  value: 0.5 #0-1
+# テキストの背景
+options.accessibility.text_background:
+  unlock: true
+  value: true # true->chat
+# チャット不透明度
+options.chat.opacity:
+  unlock: true
+  value: 1.0
+# 行間
+options.chat.line_spacing:
+  unlock: true
+  value: 0
+# チャットの遅延間隔
+options.chat.delay_instant:
+  unlock: true
+  value: 0
+# 通知表示時間
+options.notifications.display_time:
+  unlock: true
+  value: 1 #0.5-10
+
+#　暗闇の脈動
+options.darknessEffectScale:
+  unlock: true
+  value: 1
+# 被ダメージ時の画面の揺れ
+options.damageTiltStrength:
+  unlock: true
+  value: 1
+# 稲妻の非表示
+options.hideLightningFlashes:
+  unlock: true
+  value: false # true: 非表示
+# モノクロのロゴ
+options.darkMojangStudiosBackgroundColor:
+  unlock: true
+  value: false
+# パノラマのスクロールスピード
+options.accessibility.panorama_speed:
+  unlock: true
+  value: 1

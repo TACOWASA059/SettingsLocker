@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.tacowasa059.settingslocker.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "settingslocker.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "AbstractWidgetMixin",
+    "EnumUnitDoubleMixin",
+    "KeyboardHandlerMixin",
+    "KeyEntryMixin",
+    "OptionInstanceMixin",
+    "OptionInstanceSliderButtonMixin",
+    "TypeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
